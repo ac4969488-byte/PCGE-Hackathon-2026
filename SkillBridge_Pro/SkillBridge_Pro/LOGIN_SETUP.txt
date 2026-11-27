@@ -1,0 +1,31 @@
+SKILLBRIDGE — LOGIN & SIGN UP UPDATE
+
+FILES
+- index.html
+- style.css
+- script.js
+
+RUN IN VS CODE
+1. Extract SkillBridge_Pro_With_Login_Signup.zip.
+2. Open the SkillBridge_Pro folder in VS Code.
+3. Install the Live Server extension if it is not installed.
+4. Right-click index.html and choose "Open with Live Server".
+5. The login page appears first. Choose Sign up to create an account.
+6. Select Student or Recruiter, enter your name, email and password, then create the account.
+7. Log out and log in again using the same email and password.
+
+NOTES
+- Existing dashboard, opportunities, applications, saved items, skills, quiz, roadmap,
+  recruiter studio and admin demo views are preserved.
+- Login accounts and demo data are stored in this browser's LocalStorage.
+- Passwords are hashed in the browser for this prototype, but this is NOT production-grade
+  authentication. Do not reuse a real password. A real release needs a backend, secure
+  password hashing on the server, HTTPS, server-side sessions/tokens and database storage.
+- Data does not sync across devices or browsers. Forgot-password and email verification
+  require backend services and are not included in this frontend-only demo.
+
+AI CAREER ASSISTANT
+- Open AI Career Assistant from the left sidebar after logging in.
+- Ask about learning plans, resumes, interviews, beginner projects, or matching your skills to demo opportunities.
+- This version uses built-in guided responses and your local demo profile. It does NOT call a live AI model or require an API key.
+- To enable real AI responses, connect a backend endpoint and call the AI provider securely from the server. Never place a private API key in browser JavaScript.

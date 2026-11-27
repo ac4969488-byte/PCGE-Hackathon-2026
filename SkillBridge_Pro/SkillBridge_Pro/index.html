@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101326">
+  <title>SkillBridge — Discover. Develop. Get Discovered.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="authScreen" class="auth-screen"></div>
+  <div class="app-shell" id="appShell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" data-view="dashboard"><span class="brand-icon">S</span><span>SkillBridge<small>STUDENT CAREER HUB</small></span></a>
+      <div class="workspace-label">WORKSPACE</div>
+      <nav class="side-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-view="dashboard"><span>⌂</span> Overview</button>
+        <button class="nav-item" data-view="opportunities"><span>◈</span> Opportunities <i class="nav-count" id="opportunityNavCount">8</i></button>
+        <button class="nav-item" data-view="applications"><span>▤</span> My applications</button>
+        <button class="nav-item" data-view="saved"><span>♡</span> Saved opportunities</button>
+        <button class="nav-item" data-view="skills"><span>✧</span> Skills & assessments</button>
+        <button class="nav-item" data-view="roadmap"><span>⌁</span> Learning roadmap</button>
+        <button class="nav-item" data-view="assistant"><span>✦</span> AI Career Assistant <i class="nav-count">AI</i></button>
+        <button class="nav-item" data-view="leaderboard"><span>♜</span> Leaderboard</button>
+      </nav>
+      <div class="workspace-label management-label">MANAGEMENT</div>
+      <nav class="side-nav">
+        <button class="nav-item" data-view="recruiter"><span>▣</span> Recruiter studio</button>
+        <button class="nav-item" data-view="admin"><span>⚙</span> Admin overview</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="upgrade-card"><div class="sparkle">✦</div><b>Your next opportunity is closer.</b><p>Build skills, show your work and keep moving forward.</p><button data-view="roadmap">Explore roadmap <span>↗</span></button></div>
+        <button class="profile-mini" data-view="profile"><span class="avatar" id="sideAvatar">AS</span><span><b id="sideName">Ashish Choudhary</b><small id="sideRole">Student account</small></span><span class="dots">•••</span></button>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Toggle navigation">☰</button>
+        <div class="breadcrumb"><span>Workspace</span><b>/</b><strong id="pageCrumb">Overview</strong></div>
+        <div class="topbar-actions">
+          <label class="global-search"><span>⌕</span><input id="globalSearch" placeholder="Search opportunities..." aria-label="Search opportunities"></label>
+          <button class="top-icon notification-trigger" id="notificationBtn" aria-label="Notifications">♧<i id="notificationDot"></i></button>
+          <button class="avatar top-avatar" data-view="profile" id="topAvatar">AS</button>
+          <button class="btn btn-outline logout-btn" id="logoutBtn">Log out ↗</button>
+        </div>
+      </header>
+
+      <section class="page-content" id="pageContent">
+        <!-- Views are rendered by script.js -->
+      </section>
+      <footer class="footer"><span>© 2026 SkillBridge</span><span>Discover. Develop. Get discovered.</span><span class="footer-status"><i></i> Demo environment</span></footer>
+    </main>
+  </div>
+
+  <dialog class="modal" id="modal">
+    <div class="modal-content" id="modalContent"></div>
+  </dialog>
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
